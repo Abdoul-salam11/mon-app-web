@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carte de profil</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+    }
+
+    .card {
+      background: #fff;
+      width: 320px;
+      border-radius: 16px;
+      padding: 32px 24px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: #667eea;
+      color: #fff;
+      font-size: 36px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+    }
+
+    .card h2 {
+      font-size: 22px;
+      color: #333;
+      margin-bottom: 4px;
+    }
+
+    .card .role {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 16px;
+    }
+
+    .card p.bio {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
+      margin-bottom: 24px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 28px;
+      background: #667eea;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    .btn:hover {
+      background: #5568d3;
+    }
+
+    .btn:active {
+      transform: scale(0.97);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="avatar">JD</div>
+    <h2>Jean Dupont</h2>
+    <div class="role">Développeur Front-End</div>
+    <p class="bio">
+      Passionné par le design d'interfaces et les expériences utilisateur simples et efficaces.
+    </p>
+    <button class="btn" onclick="alert('Bonjour Jean Dupont !')">
+      Contacter
+    </button>
+  </div>
+
+</body>
+</html>
